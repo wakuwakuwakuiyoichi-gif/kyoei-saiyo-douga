@@ -1,0 +1,628 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>共栄印刷 採用動画サービス</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+  :root{
+    --bg:#FFFFFF;
+    --surface:#FFFFFF;
+    --surface-2:#F2F6F8;
+    --text:#222222;
+    --text-soft:#63666B;
+    --border:#E3E7EA;
+    --tint:#AED5E3;
+    --tint-text:#143C44;
+    --accent:#4FA0AC;
+    --accent-deep:#1D6E79;
+    --accent-text:#FFFFFF;
+    --shadow: 0 20px 45px -28px rgba(20,20,20,.35);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:16px;
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+    padding-inline:0;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    text-wrap:balance;
+    margin:0;
+    color:var(--text);
+  }
+  p{margin:0;}
+  img{max-width:100%;}
+  [hidden]{display:none!important;}
+  .mono{font-family:"Montserrat","Noto Sans JP",sans-serif;}
+
+  .wrap{max-width:1120px;margin-inline:auto;padding-inline:20px;}
+  @media (min-width:640px){ .wrap{padding-inline:32px;} }
+
+  section{padding-block:clamp(48px,8vw,96px);}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.55em;
+    font-family:"Montserrat",sans-serif;
+    font-weight:600;font-size:.78rem;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent-deep);
+  }
+
+  .lead{font-size:1.12rem;color:var(--text-soft);max-width:34em;line-height:1.85;}
+  .lead-wide{max-width:40em;}
+
+  /* ---------- top progress bar ---------- */
+  #scrollbar{
+    position:fixed;top:0;left:0;height:3px;width:0%;
+    background:linear-gradient(90deg,var(--accent),var(--tint));
+    z-index:100;transition:width .12s linear;
+  }
+  @media (prefers-reduced-motion:reduce){ #scrollbar{transition:none;} }
+
+  /* ---------- nav ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:14px;}
+  .brandmark{display:flex;align-items:center;gap:.85em;text-decoration:none;color:var(--text);}
+  .brandmark svg{display:block;width:64px;height:auto;color:var(--text);}
+  .brandmark .divider{width:1px;height:22px;background:var(--border);}
+  .brandmark span{font-family:"Noto Sans JP";font-size:.78rem;font-weight:500;letter-spacing:.02em;color:var(--text-soft);}
+  .nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0;}
+  .nav-links a{color:var(--text-soft);text-decoration:none;font-size:.92rem;font-weight:500;}
+  .nav-links a:hover{color:var(--accent-deep);}
+  @media (max-width:760px){ .nav-links{display:none;} }
+
+  .btn{
+    display:inline-flex;align-items:center;gap:.5em;
+    font-family:"Noto Sans JP";font-weight:700;font-size:.94rem;
+    padding:.85em 1.5em;border-radius:999px;border:1px solid transparent;
+    cursor:pointer;text-decoration:none;white-space:nowrap;
+  }
+  .btn-accent{background:var(--bg);color:var(--text);border-color:var(--text);}
+  .btn-accent:hover{background:var(--text);color:var(--bg);}
+  .btn-outline{background:transparent;border-color:var(--border);color:var(--text);}
+  .btn-outline:hover{border-color:var(--accent-deep);color:var(--accent-deep);}
+
+  /* ---------- viewfinder corners ---------- */
+  .viewfinder{position:relative;}
+  .viewfinder .corner{position:absolute;width:22px;height:22px;border:2px solid var(--accent);opacity:.9;}
+  .viewfinder .corner.tl{top:-1px;left:-1px;border-right:none;border-bottom:none;border-radius:6px 0 0 0;}
+  .viewfinder .corner.tr{top:-1px;right:-1px;border-left:none;border-bottom:none;border-radius:0 6px 0 0;}
+  .viewfinder .corner.bl{bottom:-1px;left:-1px;border-right:none;border-top:none;border-radius:0 0 0 6px;}
+  .viewfinder .corner.br{bottom:-1px;right:-1px;border-left:none;border-top:none;border-radius:0 0 6px 0;}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--bg);color:var(--text);}
+  .hero .wrap{padding-block:clamp(40px,7vw,88px);}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  @media (max-width:880px){ .hero-grid{grid-template-columns:1fr;} }
+  .rec{display:inline-flex;align-items:center;gap:.6em;color:var(--text-soft);}
+  .rec i{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;}
+  @media (prefers-reduced-motion:no-preference){
+    .rec i{animation:pulse 1.8s ease-in-out infinite;}
+  }
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.25;}}
+  .hero h1{font-size:clamp(2rem,3.6vw + 1rem,3.2rem);font-weight:900;line-height:1.35;margin-block:.55em .5em;color:var(--text);}
+  .hero h1 em{font-style:normal;color:var(--accent-deep);}
+  .hero .lead{color:var(--text-soft);max-width:30em;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;}
+
+  .player{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:18px;padding:14px;
+    box-shadow:var(--shadow);
+  }
+  .player-screen{
+    aspect-ratio:16/9;border-radius:10px;
+    background:var(--bg);
+    display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
+  }
+  .player-screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 35%;}
+  .play-btn{
+    position:relative;z-index:1;
+    width:64px;height:64px;border-radius:50%;
+    background:var(--bg);
+    border:1px solid var(--border);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:var(--shadow);
+  }
+  .play-btn svg{margin-left:4px;}
+  .player-caption{padding-top:12px;font-family:"Montserrat";font-size:.72rem;letter-spacing:.06em;color:var(--text-soft);}
+  .player-bar{display:flex;align-items:center;gap:10px;padding-top:10px;font-family:"Montserrat";font-size:.72rem;color:var(--text-soft);}
+  .seek{flex:1;height:3px;border-radius:2px;background:var(--border);position:relative;}
+  .seek::after{content:"";position:absolute;left:0;top:0;bottom:0;width:34%;background:var(--accent);border-radius:2px;}
+  .seek::before{content:"";position:absolute;left:34%;top:50%;translate:-50% -50%;width:9px;height:9px;border-radius:50%;background:var(--accent);}
+
+  /* ---------- generic section heads ---------- */
+  .section-head{max-width:44em;margin-bottom:clamp(32px,5vw,52px);}
+  .section-head h2{font-size:clamp(1.55rem,2vw + 1rem,2.3rem);font-weight:800;margin-top:.4em;}
+
+  /* ---------- problem cards ---------- */
+  .card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  @media (max-width:920px){ .card-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .card-grid{grid-template-columns:1fr;} }
+  .p-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:16px;
+    padding:26px 22px;display:flex;flex-direction:column;gap:16px;
+  }
+  .p-card .icon{width:46px;height:46px;border-radius:12px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--accent-deep);}
+  .p-card h3{font-size:1.05rem;font-weight:700;}
+  .p-card p{color:var(--text-soft);font-size:.94rem;}
+
+  /* ---------- stats ---------- */
+  .stat-row{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  @media (max-width:640px){ .stat-row{grid-template-columns:1fr;} }
+  .stat-tile{
+    background:var(--surface);border:1px solid var(--border);border-radius:20px;
+    padding:32px clamp(22px,3vw,36px);
+  }
+  .stat-num{font-family:"Montserrat";font-weight:700;font-size:clamp(2.6rem,5vw,3.8rem);
+    color:var(--accent-deep);font-variant-numeric:tabular-nums;line-height:1;}
+  .stat-tile p{margin-top:14px;color:var(--text-soft);max-width:22em;}
+  .source-note{margin-top:18px;font-size:.82rem;color:var(--text-soft);font-family:"Montserrat";}
+
+  /* ---------- scene media ---------- */
+  .section-head.tight{margin-bottom:0;}
+  .scene-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:clamp(32px,5vw,52px);}
+  @media (max-width:760px){ .scene-intro{grid-template-columns:1fr;} }
+  .scene-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+  @media (max-width:760px){ .scene-split{grid-template-columns:1fr;} }
+  .scene-photo{border-radius:16px;overflow:hidden;border:1px solid var(--border);aspect-ratio:4/3;}
+  .scene-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .scene-photo.tall{aspect-ratio:3/4;}
+  @media (max-width:760px){ .scene-photo{aspect-ratio:16/9;} }
+
+  /* ---------- benefits ---------- */
+  .benefit{
+    display:grid;grid-template-columns:88px 1fr;gap:28px;
+    padding-block:clamp(36px,5vw,52px);
+    border-top:1px solid var(--border);
+  }
+  .benefit:first-of-type{border-top:none;}
+  @media (max-width:640px){ .benefit{grid-template-columns:56px 1fr;gap:18px;} }
+  .scene-tag{
+    font-family:"Montserrat";font-weight:700;font-size:.72rem;letter-spacing:.08em;
+    color:var(--text-soft);writing-mode:horizontal-tb;padding-top:.3em;
+  }
+  .scene-tag b{display:block;color:var(--accent-deep);font-size:1.6rem;font-family:"Noto Sans JP";font-weight:900;line-height:1;margin-bottom:.35em;}
+  .benefit-head{display:flex;align-items:center;gap:16px;margin-bottom:14px;flex-wrap:wrap;}
+  .benefit-head .icon{width:44px;height:44px;border-radius:12px;background:var(--bg);border:1px solid var(--border);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex:none;}
+  .benefit h3{font-size:1.35rem;font-weight:800;}
+  .benefit > .body-text{color:var(--text-soft);max-width:38em;}
+  .detail{margin-top:24px;}
+
+  .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;}
+  @media (max-width:560px){ .ba-grid{grid-template-columns:1fr;} }
+  .ba-col{border-radius:14px;padding:20px 22px;border:1px solid var(--border);}
+  .ba-col.before{background:var(--bg);}
+  .ba-col.after{background:var(--bg);border-color:var(--accent);}
+  .ba-col h4{font-family:"Montserrat";font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;opacity:.75;}
+  .ba-col ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;font-size:.92rem;}
+  .ba-col li{padding-left:1.3em;position:relative;}
+  .ba-col.before li::before{content:"–";position:absolute;left:0;opacity:.6;}
+  .ba-col.after li::before{content:"✓";position:absolute;left:0;color:var(--accent-deep);font-weight:700;}
+
+  .mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px;}
+  @media (max-width:760px){ .mini-grid{grid-template-columns:repeat(2,1fr);} }
+  .mini-card{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:18px 16px;}
+  .mini-card .n{font-family:"Montserrat";color:var(--accent-deep);font-weight:700;font-size:.78rem;}
+  .mini-card h5{margin:.5em 0 .3em;font-size:.95rem;font-weight:700;}
+  .mini-card p{font-size:.85rem;color:var(--text-soft);}
+
+  .callout{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:22px 26px;}
+  .callout .headline{display:flex;align-items:baseline;gap:.6em;flex-wrap:wrap;margin-top:6px;}
+  .callout .headline b{font-family:"Montserrat";color:var(--accent-deep);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;font-variant-numeric:tabular-nums;line-height:1;}
+  .callout ul{margin:16px 0 0;padding-left:1.1em;color:var(--text-soft);font-size:.92rem;display:flex;flex-direction:column;gap:7px;}
+  .cost-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:16px;align-items:stretch;}
+  .cost-grid .stat-tile{display:flex;flex-direction:column;justify-content:center;}
+  @media (max-width:640px){ .cost-grid{grid-template-columns:1fr;} }
+
+  .trend-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  @media (max-width:720px){ .trend-row{grid-template-columns:1fr;} }
+  .trend-card{border:1px solid var(--border);border-radius:14px;padding:18px 18px 20px;}
+  .trend-card h5{font-size:.98rem;font-weight:700;margin-bottom:.4em;}
+  .trend-card p{font-size:.87rem;color:var(--text-soft);}
+
+  .chan-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
+  .chan-pill{display:flex;align-items:center;gap:.6em;background:var(--bg);border:1px solid var(--border);border-radius:999px;padding:.6em 1.1em .6em .8em;font-size:.9rem;font-weight:500;}
+  .chan-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);}
+
+  /* ---------- summary table ---------- */
+  .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:16px;}
+  table.summary{width:100%;border-collapse:collapse;min-width:560px;}
+  table.summary th, table.summary td{padding:16px 20px;text-align:left;font-size:.94rem;}
+  table.summary thead th{
+    font-family:"Montserrat";font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--text-soft);border-bottom:1px solid var(--border);
+  }
+  table.summary thead th:not(:first-child){color:var(--text-soft);}
+  table.summary tbody tr:not(:last-child) td{border-bottom:1px solid var(--border);}
+  table.summary tbody th{font-weight:700;background:var(--bg);white-space:nowrap;}
+  table.summary td.before{color:var(--text-soft);}
+  table.summary td.after{color:var(--accent-deep);background:var(--bg);font-weight:600;}
+
+  /* ---------- message ---------- */
+  .message{background:var(--bg);border-block:1px solid var(--border);color:var(--text);}
+  .message .wrap{padding-block:clamp(64px,9vw,120px);text-align:center;}
+  .message h2{font-size:clamp(1.5rem,2.6vw + 1rem,2.5rem);font-weight:800;max-width:20em;margin-inline:auto;line-height:1.6;color:var(--text);}
+  .message h2 b{color:var(--accent-deep);font-weight:800;font-size:1.4em;display:inline-block;line-height:1.3;}
+  .message p{margin-top:22px;color:var(--text-soft);max-width:36em;margin-inline:auto;font-size:1.02rem;}
+
+  /* ---------- CTA ---------- */
+  .cta-panel{
+    background:var(--surface);border:1px solid var(--border);border-radius:24px;
+    padding:clamp(36px,6vw,64px);text-align:center;position:relative;
+  }
+  .cta-panel h2{font-size:clamp(1.4rem,2vw + 1rem,2rem);font-weight:800;}
+  .cta-panel .lead{margin-inline:auto;text-align:center;margin-top:14px;}
+  .cta-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:30px;}
+
+  footer{border-top:1px solid var(--border);}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:26px;flex-wrap:wrap;gap:12px;}
+  footer .fm{display:flex;align-items:center;gap:.9em;}
+  footer .fm svg{display:block;width:52px;height:auto;color:var(--text);}
+  footer .fm strong{font-family:"Noto Sans JP";font-weight:700;font-size:.92rem;}
+  footer small{color:var(--text-soft);font-size:.8rem;}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <symbol id="i-trend-down" viewBox="0 0 32 32"><path d="M4 9 L12 17 L17 12 L28 23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 23 H21 M28 23 V16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mismatch" viewBox="0 0 32 32"><rect x="7" y="4" width="13" height="24" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19 16 H27 M23 11 L28 16 L23 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cost-up" viewBox="0 0 32 32"><rect x="5" y="19" width="5" height="9" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="13" width="5" height="15" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="21" y="6" width="5" height="22" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 9 L14 4 L26 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></symbol>
+  <symbol id="i-sns-slow" viewBox="0 0 32 32"><rect x="8" y="4" width="12" height="22" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><line x1="8" y1="21" x2="20" y2="21" stroke="currentColor" stroke-width="1.4" opacity=".5"/><circle cx="23" cy="23" r="6.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M23 20 V23 L25.4 24.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-magnet" viewBox="0 0 32 32"><path d="M9 17 V9 a7 7 0 0 1 14 0 v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 17 h5 v5 a2.5 2.5 0 0 1 -5 0 z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M18 17 h5 v5 a2.5 2.5 0 0 1 -5 0 z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2 6 L7 9 L2 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".65"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 32 32"><path d="M16 4 L27 8 V16 C27 23 22 27.5 16 29 C10 27.5 5 23 5 16 V8 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M11 16 L15 20 L22 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cost-down" viewBox="0 0 32 32"><rect x="5" y="6" width="5" height="22" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="13" width="5" height="15" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="21" y="19" width="5" height="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 6 L27 6 L27 13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/><path d="M27 6 L18 15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".6"/></symbol>
+  <symbol id="i-reach" viewBox="0 0 32 32"><rect x="6" y="7" width="11" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="11.5" cy="22.2" r="1" fill="currentColor" stroke="none"/><path d="M21 11 a9 9 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M24.5 8 a14 14 0 0 1 0 17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".55"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 32 32"><circle cx="16" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 8.4 L17.4 11.3 L20.6 11.7 L18.3 13.9 L18.9 17.1 L16 15.5 L13.1 17.1 L13.7 13.9 L11.4 11.7 L14.6 11.3 Z" fill="currentColor" stroke="none" opacity=".9"/><path d="M12 18 L10 28 L16 25 L22 28 L20 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-network" viewBox="0 0 32 32"><circle cx="16" cy="16" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="5.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="27" cy="16" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="26.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="5" cy="16" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 9 V13 M23 16 H19 M16 23 V19 M9 16 H13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-logo-kyoei" viewBox="0 0 85 23.6" fill="currentColor">
+    <path d="M17.1.6L0,19.6V.6h7.7v6l-2,2.2V2.6H1.9v12L14.5.6s2.6,0,2.6,0Z"/>
+    <path d="M54.8,3.3c-4.3-4.4-11.3-4.4-15.7,0h0c-2.1,2.4-3.3,5.5-3.2,8.6,0,6.9,4.7,11.8,11.1,11.8s5.8-1.2,7.9-3.3c2.1-2.3,3.2-5.4,3.2-8.5,0-3.1-1.1-6.2-3.2-8.5ZM46.9,18.8c-3.8,0-5.1-3.7-5.1-6.9s1.3-7.2,5.1-7.2,5.1,3.8,5.1,7-1.3,7.1-5.1,7.1Z"/>
+    <path d="M85,.6v22.4h-6.7V.6h6.7Z"/>
+    <path d="M76.1.6v4.5h-9.9v4.3h8.5v4.5h-8.5v4.6h9.9v4.5h-16.5V.6h16.5Z"/>
+    <path d="M7.7,14.5v8.5H0l7.7-8.5Z"/>
+    <polygon points="22.9 .6 20.2 .7 7.7 14.5 14.2 23 22.9 23 13.7 10.9 22.9 .6"/>
+    <polygon points="32.4 .6 27.7 8.7 22.9 .6 18.8 5.2 24.1 14.4 24.1 23 30.8 23 30.8 14.4 38.7 .6 32.4 .6"/>
+  </symbol>
+</defs>
+</svg>
+
+<div id="scrollbar"></div>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brandmark" href="#top">
+      <svg viewBox="0 0 85 23.6"><use href="#i-logo-kyoei"/></svg>
+      <span class="divider"></span>
+      <span>採用動画サービス</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#problem">課題</a></li>
+      <li><a href="#why-video">動画の効果</a></li>
+      <li><a href="#benefits">6つのメリット</a></li>
+      <li><a href="#summary">導入前後</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+    <a class="btn btn-outline" href="#contact">資料請求</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="rec mono"><i></i>REC ・ 2026 採用動画サービス ご提案</span>
+        <h1>採用にお困りの<br>企業様へ。<br>動画の力で、<em>応募・定着・採用コスト</em>の課題を解決する。</h1>
+        <p class="lead">共栄印刷が、課題整理から企画・撮影・編集・運用まで伴走してご提案します。</p>
+        <div class="hero-ctas">
+          <a class="btn btn-accent" href="#contact">無料相談を申し込む</a>
+          <a class="btn btn-accent" href="#benefits">6つのメリットを見る</a>
+        </div>
+      </div>
+      <div class="player viewfinder">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <div class="player-screen">
+          <img src="img/hero-camera.jpg" alt="採用動画の撮影風景" loading="eager">
+          <div class="play-btn">
+            <svg width="20" height="22" viewBox="0 0 20 22"><polygon points="0,0 0,22 20,11" fill="currentColor" style="color:var(--text)"/></svg>
+          </div>
+        </div>
+        <span class="player-caption">採用動画サービス紹介 ／ 共栄印刷株式会社</span>
+        <div class="player-bar">
+          <span>00:47</span><div class="seek"></div><span>02:14</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problem">
+    <div class="wrap">
+      <div class="scene-intro">
+        <div class="section-head tight">
+          <span class="eyebrow">Scene 01 — The Problem</span>
+          <h2>人手不足の中で、<br>採用担当者は多くの壁に<br>ぶつかっています</h2>
+          <p class="lead">採用担当者が抱える4つの課題</p>
+        </div>
+        <div class="scene-photo">
+          <img src="img/problem-worry.jpg" alt="採用課題に頭を悩ませる担当者" loading="lazy">
+        </div>
+      </div>
+      <div class="card-grid">
+        <div class="p-card">
+          <span class="icon"><svg width="24" height="24"><use href="#i-trend-down"/></svg></span>
+          <h3>応募数の減少</h3>
+          <p>求人票やテキスト情報だけでは魅力が伝わらず、応募数そのものが増えない。</p>
+        </div>
+        <div class="p-card">
+          <span class="icon"><svg width="24" height="24"><use href="#i-mismatch"/></svg></span>
+          <h3>ミスマッチ・早期離職</h3>
+          <p>入社後のギャップから、内定辞退や早期離職が発生しやすい。</p>
+        </div>
+        <div class="p-card">
+          <span class="icon"><svg width="24" height="24"><use href="#i-cost-up"/></svg></span>
+          <h3>採用コストの増加</h3>
+          <p>広告費・人材紹介費がかさみ、採用単価が年々上昇している。</p>
+        </div>
+        <div class="p-card">
+          <span class="icon"><svg width="24" height="24"><use href="#i-sns-slow"/></svg></span>
+          <h3>SNS対応の遅れ</h3>
+          <p>Z世代が集まるSNSでの発信が手薄で、若年層に届いていない。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-video">
+    <div class="wrap">
+      <div class="scene-split">
+        <div>
+          <div class="section-head tight">
+            <span class="eyebrow">Scene 02 — Why Video</span>
+            <h2>なぜ「動画」が効くのか。<br>数字で見る効果</h2>
+          </div>
+          <div class="stat-row">
+            <div class="stat-tile">
+              <div class="stat-num mono">86.6%</div>
+              <p>採用動画を見た就活生のうち、企業選びの参考にしたと回答。</p>
+            </div>
+            <div class="stat-tile">
+              <div class="stat-num mono">77.0%</div>
+              <p>動画視聴後に、その企業への志望度が上がったと回答。</p>
+            </div>
+          </div>
+          <p class="source-note">出典: moovy「就活生の採用動画に関する意識調査」(2022年3月, n=321)</p>
+        </div>
+        <div class="scene-photo tall">
+          <img src="img/student-sns.jpg" alt="スマートフォンで動画を見る就活生" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="wrap">
+      <div class="scene-intro">
+        <div class="section-head tight">
+          <span class="eyebrow">Scene 03 — Six Benefits</span>
+          <h2>採用動画がもたらす<br>6つのメリット</h2>
+        </div>
+        <div class="scene-photo">
+          <img src="img/mentoring.jpg" alt="先輩社員が後輩社員に業務を説明する様子" loading="lazy">
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="scene-tag mono"><b>01</b>BENEFIT</div>
+        <div>
+          <div class="benefit-head">
+            <span class="icon"><svg width="24" height="24"><use href="#i-magnet"/></svg></span>
+            <h3>応募数・応募転換率の向上</h3>
+          </div>
+          <p class="body-text">求人票の文字情報だけでは伝わらない「職場の空気感」「社員の人柄」を、動画は数十秒で伝えられます。求職者が入社後の姿をイメージしやすくなることで、閲覧から応募への転換率が高まります。</p>
+          <div class="detail ba-grid">
+            <div class="ba-col before">
+              <h4 class="mono">導入前</h4>
+              <ul>
+                <li>求人票のテキストのみで職場が伝わらない</li>
+                <li>候補者が入社後のイメージを持てない</li>
+                <li>「なんとなく不安」で応募を離脱</li>
+              </ul>
+            </div>
+            <div class="ba-col after">
+              <h4 class="mono">導入後</h4>
+              <ul>
+                <li>数十秒の動画で雰囲気・人柄が伝わる</li>
+                <li>働く姿をリアルにイメージできる</li>
+                <li>安心感が生まれ、応募への後押しに</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="scene-tag mono"><b>02</b>BENEFIT</div>
+        <div>
+          <div class="benefit-head">
+            <span class="icon"><svg width="24" height="24"><use href="#i-shield"/></svg></span>
+            <h3>内定辞退・早期離職の防止</h3>
+          </div>
+          <p class="body-text">社員インタビューや実際の業務に密着した映像を事前に見せることで、「思っていたのと違った」というギャップを減らせます。入社前の期待値を調整する効果があり、内定辞退や早期離職の抑制につながります。</p>
+          <div class="detail callout">
+            <div class="headline"><b>RJP</b><span>リアリスティック・ジョブ・プレビュー効果</span></div>
+            <p style="margin-top:8px;color:var(--text-soft);font-size:.92rem;">入社前に「良い面も、リアルな面も」ありのままを見せることで、期待値のズレを防ぐ考え方です。</p>
+          </div>
+          <div class="detail mini-grid">
+            <div class="mini-card"><span class="n">01</span><h5>社員インタビュー</h5><p>働く社員のリアルな声を届ける</p></div>
+            <div class="mini-card"><span class="n">02</span><h5>1日の業務密着</h5><p>実際の業務・チームの雰囲気を可視化</p></div>
+            <div class="mini-card"><span class="n">03</span><h5>期待値の調整</h5><p>入社前後のギャップを最小化</p></div>
+            <div class="mini-card"><span class="n">04</span><h5>定着率の向上</h5><p>納得感のある入社で離職を抑制</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="scene-tag mono"><b>03</b>BENEFIT</div>
+        <div>
+          <div class="benefit-head">
+            <span class="icon"><svg width="24" height="24"><use href="#i-cost-down"/></svg></span>
+            <h3>採用コストの削減</h3>
+          </div>
+          <p class="body-text">求人広告費や人材紹介手数料に依存した採用は、応募が集まらないほど割高になります。動画によって応募数・応募の質が上がることで、1名あたりの採用コスト（採用単価）を下げられます。</p>
+          <div class="detail cost-grid">
+            <div class="stat-tile">
+              <div class="stat-num mono">40%</div>
+              <p style="margin-top:8px;">動画導入による採用単価の削減試算</p>
+            </div>
+            <div class="callout">
+              <span class="mono" style="font-size:.78rem;letter-spacing:.08em;color:var(--text-soft);">試算例</span>
+              <div class="headline"><b>年間 約200万円</b><span>のコスト削減</span></div>
+              <ul>
+                <li>求人広告・媒体費の掲載効果が上がり、無駄打ちが減る</li>
+                <li>応募の質が上がり、面接・選考にかかる工数が削減</li>
+                <li>動画は資産として使い回せるため、都度の制作コストが不要</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="scene-tag mono"><b>04</b>BENEFIT</div>
+        <div>
+          <div class="benefit-head">
+            <span class="icon"><svg width="24" height="24"><use href="#i-reach"/></svg></span>
+            <h3>Z世代・SNSでのリーチ拡大</h3>
+          </div>
+          <p class="body-text">TikTok・Instagram・YouTube Shortsといった縦型ショート動画プラットフォームでの採用活動が急増しています。Z世代が日常的に接する場所に情報を届けることで、認知拡大と母集団形成につながります。</p>
+          <div class="detail trend-row">
+            <div class="trend-card"><h5>30〜90秒の短尺</h5><p>2〜3分の会社紹介から、要点を絞った短尺構成が主流に</p></div>
+            <div class="trend-card"><h5>縦型フォーマット</h5><p>TikTok・Reels・Shortsを前提とした縦型動画が標準化</p></div>
+            <div class="trend-card"><h5>ドキュメンタリー風</h5><p>作り込みすぎない自然な表現が、求職者の信頼を獲得</p></div>
+          </div>
+          <p class="source-note">出典: HUMAN CENTRIX「採用動画の最新トレンド2026」</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="scene-tag mono"><b>05</b>BENEFIT</div>
+        <div>
+          <div class="benefit-head">
+            <span class="icon"><svg width="24" height="24"><use href="#i-badge"/></svg></span>
+            <h3>ブランディング・差別化</h3>
+          </div>
+          <p class="body-text">知名度で大手企業に劣る中小企業ほど、動画による「顔の見える発信」が効果を発揮します。経営者や社員の想いを直接届けることで、規模ではなく共感で選ばれる採用ブランディングを構築できます。</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <div class="scene-tag mono"><b>06</b>BENEFIT</div>
+        <div>
+          <div class="benefit-head">
+            <span class="icon"><svg width="24" height="24"><use href="#i-network"/></svg></span>
+            <h3>汎用性・多チャネル活用</h3>
+          </div>
+          <p class="body-text">一度制作した動画は、複数の場面で繰り返し活用できる「資産」になります。</p>
+          <div class="detail chan-row">
+            <span class="chan-pill"><span class="dot"></span>会社説明会・面談</span>
+            <span class="chan-pill"><span class="dot"></span>自社採用サイト</span>
+            <span class="chan-pill"><span class="dot"></span>SNS運用</span>
+            <span class="chan-pill"><span class="dot"></span>内定者フォロー</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="summary">
+    <div class="wrap">
+      <div class="scene-intro">
+        <div class="section-head tight">
+          <span class="eyebrow">Scene 04 — Summary</span>
+          <h2>導入前後で何が変わるか</h2>
+        </div>
+        <div class="scene-photo">
+          <img src="img/handshake.jpg" alt="握手を交わすビジネスパーソン" loading="lazy">
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="summary">
+          <thead>
+            <tr><th>項目</th><th>導入前</th><th>導入後</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>応募数</th><td class="before">テキストのみで反応が鈍い</td><td class="after">動画で興味喚起、応募が増加</td></tr>
+            <tr><th>定着率</th><td class="before">入社後のギャップで早期離職</td><td class="after">事前理解が進みミスマッチ減少</td></tr>
+            <tr><th>採用コスト</th><td class="before">広告費・紹介費がかさむ</td><td class="after">採用単価を抑制（試算40%減）</td></tr>
+            <tr><th>若年層への訴求</th><td class="before">SNSでの発信が手薄</td><td class="after">縦型ショート動画でZ世代に浸透</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="message">
+    <div class="wrap">
+      <h2>採用動画は、<br>「<b>見えなかった魅力</b>」<br>を可視化する投資です。</h2>
+      <p><span style="white-space:nowrap;">応募数、定着率、採用コスト、若年層への訴求 —— 採用に関わる課題の多くは、</span><br>「伝わっていないこと」が原因です。動画はその橋渡しをします。</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta-panel viewfinder">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <span class="eyebrow">Next Step</span>
+        <h2 style="margin-top:.5em;">まずは、貴社の採用課題をお聞かせください</h2>
+        <p class="lead">課題整理から企画・撮影・編集・運用まで伴走してご提案いたします。<span style="white-space:nowrap;">お気軽にお問い合わせください。</span></p>
+        <div class="cta-actions">
+          <a class="btn btn-accent" href="#contact">無料相談を申し込む</a>
+          <a class="btn btn-accent" href="#contact">資料をダウンロード</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fm">
+      <svg viewBox="0 0 85 23.6"><use href="#i-logo-kyoei"/></svg>
+      <strong>共栄印刷株式会社</strong>
+    </div>
+    <small>© 2026 共栄印刷株式会社 — 採用動画サービス ご提案資料より作成</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var bar = document.getElementById('scrollbar');
+  function update(){
+    var el = document.documentElement;
+    var scrollTop = el.scrollTop || document.body.scrollTop;
+    var height = el.scrollHeight - el.clientHeight;
+    var pct = height > 0 ? (scrollTop / height) * 100 : 0;
+    bar.style.width = pct + '%';
+  }
+  document.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+
+</body></html>
